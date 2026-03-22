@@ -1,0 +1,19 @@
+{
+    "name": "yourplatform/multi-pickup-extension",
+    "description": "Multi-pickup, rider capacity, and nearby pickup notifications for your courier network",
+    "type": "library",
+    "autoload": {
+        "psr-4": {
+            "Extensions\\MultiPickup\\": "src/",
+            "Extensions\\MultiPickup\\Database\\Migrations\\": "database/migrations/"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Extensions\\MultiPickup\\MultiPickupServiceProvider"
+            ]
+        }
+    },
+    "minimum-stability": "stable"
+}
